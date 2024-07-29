@@ -1,0 +1,12 @@
+Pre-requisites to run the Dockerfile or docker-compose.yml file on your computer
+
+1. Docker Desktop
+
+After completion of the project I created a Dockerfile. From the Dockerfile a docker-image is generated using command: 'docker build -t fyle .'.
+Then starting a container using command: 'docker run --name task -it -p 7755:7755 -v "D:\VS code\Python\fyle-backend-task:/python-docker" fyle'
+
+Since the docker container is running smoothly, I created a docker-compose.yml file to automating the above stuff(creating image and spinning the container).
+
+Now that docker-compose.yml file is created the only command to run the application is: 'docker-compose up'.
+
+That's all. Hit http://127.0.0.1:7755/ on your favourite browser or API-client.

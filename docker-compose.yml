@@ -1,0 +1,7 @@
+services:
+  flask-server:
+    build: .
+    ports:
+      - "7755:7755"
+    volumes:
+      - '.:/python-docker'
